@@ -1,0 +1,8 @@
+name: golang-vimrc
+on: [push]
+jobs:
+  check-vim-version:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sudo apt-get install vim
+      - run: vim --version
